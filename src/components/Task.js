@@ -9,6 +9,7 @@ const Task = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => (
         defaultChecked={state === "TASK_ARCHIVED"}
         disabled={true}
         name="checked"
+        style={{ background: 'red' }}
       />
       <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
     </label>
